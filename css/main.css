@@ -55,14 +55,6 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -116,28 +108,6 @@ textarea {
 
 .invisible {
   visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
 }
 
 /* ==========================================================================
@@ -254,19 +224,19 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   margin-top: 0;
-  font-size:3.375rem;
+  font-size: 2.25rem;
 }
 
-h2 {font-size: 2.25rem;}
+h2 {font-size: 1.953rem;}
 
-h3 {font-size: 1.5rem;}
+h3 {font-size: 1.56rem;}
 
-h4 {font-size: 1rem;}
+h4 {font-size: 1.25rem;}
 
-h5 {font-size: 1.333rem;}
+h5 {font-size: 1rem;}
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 nav .menu a,
@@ -322,6 +292,8 @@ nav .menu a:hover,
   justify-content: space-evenly;
   align-content: center;
   height: 100%;
+  margin-bottom: 2rem;
+  padding: 6em;
 }
 
 .left {
@@ -357,6 +329,10 @@ h3.title {
   font-style: italic;
 }
 
+.headshot {
+  width: auto;
+}
+
 .menu {
   display: flex;
   justify-content: space-evenly;
@@ -367,6 +343,7 @@ h3.title {
   list-style-type: none;
 }
 
+/*portfolio page*/
 .portfolio-container {
   margin: 0 auto;
   text-align: center;
