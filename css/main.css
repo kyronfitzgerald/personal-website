@@ -364,3 +364,10 @@ h3.title {
 .special-img {
   display: none;
 }
+
+/*what im doing now page*/
+.internal-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 2em;
+}
