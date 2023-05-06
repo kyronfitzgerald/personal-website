@@ -202,6 +202,20 @@ video {
   }
 }
 
+.center {
+  text-align: center;
+}
+
+.federo {font-family: 'Federo', sans-serif;}
+
+.m0 {
+  margin: 0;
+}
+
+.font-vw {
+  font-size: 3vw!important;
+}
+
 body {
   background-image: url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/614f353f1e11a6a7afdd8b74_6059a3e2b9ae6d2bd508685c_pt-texture-2.jpg");
   background-position: 50% 50%;
@@ -215,7 +229,7 @@ main {
   flex-direction: column;
 }
 
-p {margin-bottom: 1rem;}
+p {margin-bottom: .50rem;}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Federo', sans-serif;
@@ -225,6 +239,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   margin-top: 0;
   font-size: 2.25rem;
+  font-family: 'Federo', sans-serif;
 }
 
 h2 {font-size: 1.953rem;}
@@ -240,7 +255,8 @@ p {
 }
 
 nav .menu a,
-.port-links a {
+.port-links a,
+.column-child a {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   text-decoration: none;
@@ -251,7 +267,8 @@ nav .menu a,
 }
 
 nav .menu a:hover,
-.port-links a:hover {
+.port-links a:hover,
+.column-child a:hover {
   font-style: italic;
 }
 
@@ -350,15 +367,25 @@ h3.title {
 
 /*portfolio page*/
 .portfolio-container {
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.text-left {
+  width: 40%;
+  align-self: flex-end;
+}
+
+.text-left p {
+font-size: 1.85rem;
 }
 
 .port-links {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  width: 60%;
 }
 
 .special-img {
@@ -370,4 +397,13 @@ h3.title {
   max-width: 960px;
   margin: 0 auto;
   padding-top: 2em;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+  color: #1b1b19;
+}
+
+.group {
+  margin: .50em 0;
 }
