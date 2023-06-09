@@ -334,12 +334,12 @@ nav .menu a:hover,
 
 .left {
   align-self: flex-end;
-  width: 100%;
+  width: 40%;
 }
 
 .right {
   align-self: flex-end;
-  width: 100%;
+  width: 60%;
 }
 
 h1.name {
@@ -366,7 +366,9 @@ h3.title {
 }
 
 .headshot {
-  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu {
